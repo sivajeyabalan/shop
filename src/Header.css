@@ -1,0 +1,41 @@
+/* Background Animation */
+
+body {
+  background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #ffdde1, #fbc2eb, 
+                              #a18cd1, #fbc2eb, #b2fefa, #2af598, #ffb347, #ffcc33);
+  background-size: 400% 400%;
+  animation: gradient 10s linear infinite;
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Aligns content to the top initially */
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  flex-direction: column;  /* Stacks content vertically */
+}
+
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  25% { background-position: 50% 100%; }
+  50% { background-position: 100% 50%; }
+  75% { background-position: 50% 0%; }
+  100% { background-position: 0% 50%; }
+}
+.header-container {
+  text-align: center;
+  color: white;
+  width: 100%;
+  max-width: 900px;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;  /* Centers the container horizontally */
+}
+
+
+/* Text Animation */
+h1, p {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
