@@ -1,0 +1,24 @@
+// import { useState, useEffect } from 'react';
+
+// const useCart = () => {
+//   const [cart, setCart] = useState([]);
+
+//   useEffect(() => {
+//     // Fetch or initialize cart data here
+//     const fetchCart = async () => {
+//       try {
+//         const response = await fetch('/api/cart');
+//         const data = await response.json();
+//         setCart(data);
+//       } catch (error) {
+//         console.error('Failed to fetch cart data:', error);
+//       }
+//     };
+
+//     fetchCart();
+//   }, []);
+
+//   return cart;
+// };
+
+// export default useCart;
