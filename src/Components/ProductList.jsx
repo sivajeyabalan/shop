@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import {Link} from "react-router-dom";
+
 const ProductList = () => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -46,6 +47,7 @@ const ProductList = () => {
 import PropTypes from "prop-types";
 
 const Product = ({ product }) => {
+  
   return (
     <div className="col-md-4 mb-4">
       <div className="card shadow-sm h-100">
@@ -58,7 +60,8 @@ const Product = ({ product }) => {
         <div className="card-body d-flex flex-column">
           <h5 className="card-title">{product.title}</h5>
           <p className="card-text text-muted">${product.price.toFixed(2)}</p>
-          <button className="btn btn-primary mt-auto" style={{backgroundColor : "green"}} ><Link to="../cart">Add to Cart</Link></button>
+          <button className="btn btn-primary mt-auto" style={{backgroundColor : "green"}} ><Link to={`/product/${product.id}`}>Add to Cart</Link></button>
+        
         </div>
       </div>
     </div>

@@ -38,7 +38,7 @@ const ProductDetails = () => {
         <button className="btn-add-to-cart" onClick={handleAddToCart}>
           Add to Cart
         </button>
-        {/* <Link to="/cart">Go to Cart</Link> */}
+        
       </div>
     </div>
   );
