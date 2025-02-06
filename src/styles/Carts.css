@@ -1,0 +1,139 @@
+/* Cart Container */
+.cart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #ffdde1, #fbc2eb, 
+                              #a18cd1, #fbc2eb, #b2fefa, #2af598, #ffb347, #ffcc33);
+  background-size: 400% 400%;
+  animation: gradient 10s linear infinite;
+}
+
+/* Cart Content */
+.cart-content {
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 800px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Cart Title */
+.cart-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  
+}
+
+/* Empty Cart Message */
+.empty-cart {
+  font-size: 20px;
+  color: #f0f0f0;
+  margin-top: 20px;
+}
+
+/* Cart Items */
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* Individual Cart Item */
+.cart-item {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Product Image */
+.cart-item-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+/* Item Details */
+.cart-item-details {
+  flex-grow: 1;
+  text-align: left;
+}
+
+.cart-item-details h2 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.cart-item-details p {
+  font-size: 18px;
+  color: #f0f0f0;
+  margin: 5px 0;
+}
+
+/* Remove Button */
+.remove-btn {
+  background-color: #ff4d4d;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.remove-btn:hover {
+  background-color: #cc0000;
+}
+
+/* Cart Summary */
+.cart-summary {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.cart-summary h2 {
+  margin: 10px 0;
+}
+
+/* Continue Shopping Button */
+.btn-continue {
+  background-color: #ff7b7b;
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  width: 50%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.btn-continue:hover {
+  background-color: #0cbf54;
+  color: white;
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  25% { background-position: 50% 100%; }
+  50% { background-position: 100% 50%; }
+  75% { background-position: 50% 0%; }
+  100% { background-position: 0% 50%; }
+}
